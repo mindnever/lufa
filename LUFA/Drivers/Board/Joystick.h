@@ -1,13 +1,13 @@
 /*
              LUFA Library
-     Copyright (C) Dean Camera, 2019.
+     Copyright (C) Dean Camera, 2017.
 
   dean [at] fourwalledcubicle [dot] com
            www.lufa-lib.org
 */
 
 /*
-  Copyright 2019  Dean Camera (dean [at] fourwalledcubicle [dot] com)
+  Copyright 2017  Dean Camera (dean [at] fourwalledcubicle [dot] com)
 
   Permission to use, copy, modify, distribute, and sell this
   software and its documentation for any purpose is hereby granted
@@ -110,6 +110,8 @@
 			static inline uint_reg_t Joystick_GetStatus(void) { return 0; }
 		#elif (BOARD == BOARD_USBKEY)
 			#include "AVR8/USBKEY/Joystick.h"
+		#elif (BOARD == BOARD_PROMICRO)
+			#include "AVR8/PROMICRO/Joystick.h"
 		#elif (BOARD == BOARD_STK525)
 			#include "AVR8/STK525/Joystick.h"
 		#elif (BOARD == BOARD_STK526)

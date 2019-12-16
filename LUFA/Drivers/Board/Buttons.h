@@ -1,13 +1,13 @@
 /*
              LUFA Library
-     Copyright (C) Dean Camera, 2019.
+     Copyright (C) Dean Camera, 2017.
 
   dean [at] fourwalledcubicle [dot] com
            www.lufa-lib.org
 */
 
 /*
-  Copyright 2019  Dean Camera (dean [at] fourwalledcubicle [dot] com)
+  Copyright 2017  Dean Camera (dean [at] fourwalledcubicle [dot] com)
 
   Permission to use, copy, modify, distribute, and sell this
   software and its documentation for any purpose is hereby granted
@@ -160,6 +160,8 @@
 			#include "XMEGA/C3_XPLAINED/Buttons.h"
 		#elif (BOARD == BOARD_U2S)
 			#include "AVR8/U2S/Buttons.h"
+		#elif (BOARD == BOARD_PROMICRO)
+
 		#else
 			#include "Board/Buttons.h"
 		#endif
